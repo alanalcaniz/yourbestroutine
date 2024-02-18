@@ -1,0 +1,196 @@
+:root{
+    --darkred: #8c2020;
+    --red: #bf3030;
+    --lightred: #bf8173;
+    --gray: #404040;
+    --black: #0d0d0d;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--black);
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 4em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+header{
+    background: var(--red);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.logo-header{
+    width: 25vw;
+    height: 8vh;
+}
+
+.links-header{
+    width: 50vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.suscribirse-header{
+    width: 25vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 3%;
+}
+
+.boton{
+    background: linear-gradient(45deg, #962525, #9c2323);
+    border-radius: 10px;
+    display: inline-block;
+    padding: .5em;
+    color: white;
+}
+
+.boton:hover{
+    background: linear-gradient(45deg, #8c2020, #6d1616);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    margin: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 10px;
+    border-radius: 15px;
+    transition: font-size .4s;
+}
+
+li a:hover{
+    background-color: #b42c2c;
+    font-size: 1.45em;
+}
+
+.intro{
+    background-image: url('../img/pressbanca1.jpg');
+    background-size: cover;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100vw;
+    opacity: 10%;
+}
+
+.contenido-intro{
+    height: 800px;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+}
+
+.texto-inicio{
+    width: 50vw;
+    height: auto;
+}
+
+.texto-inicio h1{
+    color: white;
+    font-size: 11em;
+    margin: 0 0 0 .5em;
+    font-weight: 800;
+}
+
+.sobre-web{
+    background: var(--gray);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-web--contenido{
+    width: 50vw;
+    margin: 5em 0;
+    color: white;
+}
+
+.info-pilares-hipertrofia{
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-pilares{
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em;
+
+}
+
+.pilares-informacion{
+    width: 50vw;
+}
+
+.opciones-pilares{
+    display: flex;
+    justify-content: space-around;
+    width: 65vw;
+}
+
+.pilar-hipertrofia{
+    height: 300px;
+    width: 300px;
+    background: #a52727;
+    display: flex;
+    margin: 3em 0 0 0;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    transition: background-color .3s;
+}
+
+.pilar-hipertrofia:hover{
+    background: #912020;
+}
+
+.pilar-image{
+    height: 200px;
+}
+
+.pilar-info{
+    height: 100px;
+    border-top: 1px solid #771b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+footer{
+    background: var(--darkred);
+    height: 8vh;
+}
