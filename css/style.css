@@ -65,6 +65,8 @@ header{
     padding: 0 .5em;
     color: white;
     margin: 0 .6em;
+    text-decoration: none;
+
 }
 
 .boton a{
@@ -227,6 +229,11 @@ li a:hover{
     text-align: center;
     justify-content: center;
     margin: 3em 0 5em 0;
+    transition: background-color 1s;
+}
+
+.boton-obtener-rutina:hover{
+    background-color: #b11919;
 }
 
 .boton-obtener-rutina p{
