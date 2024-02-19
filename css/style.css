@@ -1,6 +1,6 @@
 :root{
     --darkred: #8c2020;
-    --red: #bf3030;
+    --red: #d22121;
     --lightred: #bf8173;
     --gray: #404040;
     --black: #0d0d0d;
@@ -51,15 +51,28 @@ header{
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-right: 3%;
+    flex-direction: row;
 }
 
 .boton{
     background: linear-gradient(45deg, #962525, #9c2323);
     border-radius: 10px;
-    display: inline-block;
-    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4em;
+    width: auto;
+    padding: 0 .5em;
     color: white;
+    margin: 0 .6em;
+}
+
+.boton a{
+    text-decoration: none;
+}
+
+.boton a:visited{
+    text-decoration: none;
 }
 
 .boton:hover{
@@ -75,11 +88,11 @@ li{
     margin: 0 20px;
 }
 
-a{
+.links-header a{
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1em;
     padding: 10px;
     border-radius: 15px;
     transition: font-size .4s;
@@ -87,7 +100,7 @@ a{
 
 li a:hover{
     background-color: #b42c2c;
-    font-size: 1.45em;
+    font-size: 1.05em;
 }
 
 .intro{
@@ -146,7 +159,7 @@ li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5em;
+    margin: 5em 0;
 
 }
 
@@ -188,6 +201,37 @@ li a:hover{
     justify-content: center;
     color: #ffffff;
     font-size: 1.3em;
+}
+
+.rutina-personalizada{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-rutina{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 0 0 0;
+}
+
+.boton-obtener-rutina{
+    width: 30em;
+    height: 10em;
+    background: linear-gradient(45deg, #d22121, #bf1c1c);
+    border-radius: 2.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 3em 0 5em 0;
+}
+
+.boton-obtener-rutina p{
+    font-size: 3em;
+    font-weight: 600;
 }
 
 footer{
