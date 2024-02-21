@@ -1,6 +1,6 @@
 :root{
     --darkred: #8c2020;
-    --red: #d22121;
+    --red: #bb2121;
     --lightred: #bf8173;
     --gray: #404040;
     --black: #0d0d0d;
@@ -17,10 +17,13 @@ body {
 
 h2{
     font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
 p{
     font-size: 1.2em;
+    font-weight: 500;
 }
 
 header{
@@ -65,7 +68,7 @@ header{
     padding: 0 .5em;
     color: white;
     margin: 0 .6em;
-    text-decoration: none;
+    text-decoration-line: none;
 
 }
 
@@ -94,16 +97,17 @@ li{
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px;
     border-radius: 15px;
-    transition: font-size .4s;
+    transition: background-color .4s;
 }
 
-li a:hover{
-    background-color: #b42c2c;
-    font-size: 1.05em;
+.links-header a:hover{
+    background-color: #b41b1b;
 }
+
+/* Index Part */
 
 .intro{
     background-image: url('../img/pressbanca1.jpg');
@@ -150,9 +154,10 @@ li a:hover{
 }
 
 .info-pilares-hipertrofia{
-    background: var(--red);
+    background: #bb2121;
     display: flex;
     justify-content: center;
+    width: 100vw;
 }
 
 .contenedor-pilares{
@@ -176,27 +181,34 @@ li a:hover{
 }
 
 .pilar-hipertrofia{
-    height: 300px;
-    width: 300px;
-    background: #a52727;
+    height: 425px;
+    width: 350px;
+    background: var(--black);
     display: flex;
     margin: 3em 0 0 0;
-    border-radius: 1em;
+    border-radius: 1.2em;
     display: flex;
     flex-direction: column;
     transition: background-color .3s;
 }
 
 .pilar-hipertrofia:hover{
-    background: #912020;
+    background: #202020;
 }
 
 .pilar-image{
-    height: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.pilar-image img{
+    height: 350px;
+    border-radius: 1.2em 1.2em 0 0;
+    
 }
 
 .pilar-info{
-    height: 100px;
+    height: 125px;
     border-top: 1px solid #771b1b;
     display: flex;
     align-items: center;
@@ -205,11 +217,16 @@ li a:hover{
     font-size: 1.3em;
 }
 
+.pilar-info h3{
+    font-weight: 300;
+}
+
 .rutina-personalizada{
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .contenedor-rutina{
@@ -221,27 +238,77 @@ li a:hover{
 }
 
 .boton-obtener-rutina{
-    width: 30em;
-    height: 10em;
-    background: linear-gradient(45deg, #d22121, #bf1c1c);
+    width: 20em;
+    height: 8em;
+    background: #e42b2b;
     border-radius: 2.5em;
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 3em 0 5em 0;
-    transition: background-color 1s;
+    transition: background-color .3s;
 }
 
 .boton-obtener-rutina:hover{
-    background-color: #b11919;
+    background: #d32020;
 }
 
 .boton-obtener-rutina p{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
+}
+
+/* Ejercicios Part */
+
+.cuerpo-pagina{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ejercicios-flex {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12{
+    background-color: white;
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    transition: background-color .3s;
+}
+
+.ejercicio--div:hover{
+    background-color: rgb(228, 228, 228);
+
+}
+
+.contenedor-ejercicio--p{
+    border-top: 1px solid #e2e2e2;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border .3s;
+}
+
+.ejercicio--div:hover .contenedor-ejercicio--p{
+    border-top: 1px solid #b8b8b8;
+}
+
+.contenedor-ejercicio--img{
+    height: 175px;
 }
 
 footer{
     background: var(--darkred);
     height: 8vh;
+    width: 100vw;
 }
