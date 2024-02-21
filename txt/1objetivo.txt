@@ -3,5 +3,5 @@ El objetivo es crear una página web en la cual esté todo lo necesario para emp
 -Apartados
 --Index
 --Ejercicios
----En grid crearé para cada grupo muscular un apartado con ejercicios, habrá en cada cuadrado un dibujo del músculo y el nombre,
-al pulsarlo se abrirá y estará toda la información sobre ese ejercicio
+---En flex crearé para cada grupo muscular un apartado con ejercicios, habrá en cada cuadrado un dibujo del músculo y el nombre,
+al pulsarlo te moverá abajo donde estará toda la información
