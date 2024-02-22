@@ -28,7 +28,7 @@ p{
 
 header{
     background: var(--red);
-    height: 8vh;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -41,20 +41,11 @@ header{
 }
 
 .links-header{
-    width: 50vw;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.suscribirse-header{
-    width: 25vw;
+    width: 75vw;
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: right;
-    flex-direction: row;
 }
 
 .boton{
@@ -99,13 +90,27 @@ li{
     font-weight: 500;
     font-size: 1.1em;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 50px;
     transition: background-color .4s;
 }
 
 .links-header a:hover{
-    background-color: #b41b1b;
+    background-color: #aa1919;
 }
+
+.boton-personalizar a{
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px;
+    color: #0d0d0d;
+    transition: background-color .4s;
+}
+
+.boton-personalizar a:hover{
+    background-color: #c9c9c9;
+}
+
 
 /* Index Part */
 
